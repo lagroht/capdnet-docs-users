@@ -44,11 +44,9 @@ Read about ProxyCommand equivalent for your SSH client.
 
 ## **User directories**
 
-Each user has a home directory exported as a NFS resource. The directories are on many severs (fermi, truten, rysy, nosal). It means that an access is fastest from the same server as the NFS export. On a different server the access is over network, so it is much slower.
+Each user has a home directory exported as a NFS resource. The directories are distributed among many severs.
 
-However, each user has also *local* directory on each server. You can access them using path `/mnt/users/$USER/local/`. You can also access local files from another server, e.g. to access local files from *nosal* on *truten* use `/mnt/users/$USER/local_nosal`. Be awere that the access is with NFS (over network)!
-
-Virtual machines over *big boxes* (e.g. fermi, rysys) shares *local* directories. They use NFS, however it shouldn't be slow because the network layer is within one machine. Let me know if this is an bottleneck for you.
+Each user has also *local* directory on each server. You can access it using path `/mnt/users/$USER/local/`. You can also access local files from another server, e.g. to access local files from *nosal* on *truten* use `/mnt/users/$USER/local_nosal`.
 
 ## **Repositories**
 
