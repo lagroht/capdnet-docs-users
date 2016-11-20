@@ -84,6 +84,10 @@ git remote set-url origin <USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/gi
 svn relocate <USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/svn/RepositoryName
 ```
 
+##### Changing git-svn repositories
+Follow [link](http://stackoverflow.com/questions/5975667/how-to-switch-svn-repositories-using-git-svn)
+
+
 ## **Http public_html for users**
 
 If you want to access your files via Http you can add them to `~/public_html` and use following URL:
