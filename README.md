@@ -73,7 +73,7 @@ Please ignore security warning (we do not have confirmed SSL certificates).
 Please put your private repositories in `~/repos/git` or `~/repos/svn` and access them using:
 ```Bash
 <USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/git
-<USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/svn
+<USERNAME>@repos.capdnet/var/user_repos/<USERNAME>/svn
 ```
 
 ##### Changing remote repository URL
@@ -81,7 +81,7 @@ Please put your private repositories in `~/repos/git` or `~/repos/svn` and acces
 If you already have working copy on your computer you can change remote repository location by typing
 ```Bash
 git remote set-url origin <USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/git/RepositoryName
-svn relocate <USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/svn/RepositoryName
+svn relocate <USERNAME>@repos.capdnet/var/user_repos/<USERNAME>/svn/RepositoryName
 ```
 
 ##### Changing git-svn repositories
