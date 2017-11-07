@@ -81,7 +81,8 @@ Please put your private repositories in `~/repos/git` or `~/repos/svn` and acces
 If you already have working copy on your computer you can change remote repository location by typing
 ```Bash
 git remote set-url origin <USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/git/RepositoryName
-svn relocate <USERNAME>@repos.capdnet/var/user_repos/<USERNAME>/svn/RepositoryName
+[SVN 1.7] svn relocate <USERNAME>@repos.capdnet/var/user_repos/<USERNAME>/svn/RepositoryName
+[SVN 1.6] svn switch --relocate svn+ssh://old.server/and/path/RepositoryName svn+ssh://<USERNAME>@repos.capdnet/var/user_repos/<USERNAME>/svn/RepositoryName
 ```
 
 ##### Changing git-svn repositories
