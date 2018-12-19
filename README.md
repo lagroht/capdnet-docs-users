@@ -15,7 +15,7 @@ Add to `~/.ssh/config` following directives (do not forget to replace `<USERNAME
 ```Bash
 Host access-1
      user <USERNAME>
-     hostname 149.156.65.41
+     hostname access-1.capdnet.ii.uj.edu.pl
 
 Host *.capdnet
    user <USERNAME>
