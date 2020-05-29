@@ -15,7 +15,7 @@ Add to `~/.ssh/config` following directives (do not forget to replace `<USERNAME
 ```Bash
 Host access-1
      user <USERNAME>
-     hostname 149.156.65.41
+     hostname access-1.capdnet.ii.uj.edu.pl
 
 Host *.capdnet
    user <USERNAME>
@@ -73,7 +73,7 @@ Please ignore security warning (we do not have confirmed SSL certificates).
 Please put your private repositories in `~/repos/git` or `~/repos/svn` and access them using:
 ```Bash
 <USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/git
-<USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/svn
+<USERNAME>@repos.capdnet/var/user_repos/<USERNAME>/svn
 ```
 
 ##### Changing remote repository URL
@@ -81,8 +81,13 @@ Please put your private repositories in `~/repos/git` or `~/repos/svn` and acces
 If you already have working copy on your computer you can change remote repository location by typing
 ```Bash
 git remote set-url origin <USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/git/RepositoryName
-svn relocate <USERNAME>@repos.capdnet:/var/user_repos/<USERNAME>/svn/RepositoryName
+[SVN 1.7] svn relocate <USERNAME>@repos.capdnet/var/user_repos/<USERNAME>/svn/RepositoryName
+[SVN 1.6] svn switch --relocate svn+ssh://old.server/and/path/RepositoryName svn+ssh://<USERNAME>@repos.capdnet/var/user_repos/<USERNAME>/svn/RepositoryName
 ```
+
+##### Changing git-svn repositories
+Follow [link](http://stackoverflow.com/questions/5975667/how-to-switch-svn-repositories-using-git-svn)
+
 
 ## **Http public_html for users**
 
